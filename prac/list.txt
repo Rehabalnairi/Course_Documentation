@@ -1,0 +1,4 @@
+Scrum
+Kanban
+Scrumban
+Extreme Programming (XP)
