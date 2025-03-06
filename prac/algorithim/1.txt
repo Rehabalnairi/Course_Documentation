@@ -1,0 +1,7 @@
+start 
+input word 
+culaulate number of legnth (x)
+create emty index[y]
+for index from number of legnth  
+X-1=y
+stop
