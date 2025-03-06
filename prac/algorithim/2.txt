@@ -1,0 +1,7 @@
+start 
+input hihest = y
+input list =x
+if x =y 
+print x
+else 
+stop 
