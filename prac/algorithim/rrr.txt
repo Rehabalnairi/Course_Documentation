@@ -1,0 +1,22 @@
+Start
+Input List of Marks M
+For i = 0 to length(M) - 1:
+For j = i + 1 to length(M):
+If M[i] < M[j]
+Swap M[i] and M[j]
+Output sorted M
+End
+
+
+Start
+Input Number N
+Initialize Original = N, Reversed = 0
+While N > 0:
+Set digit = N mod 10
+Set Reversed = Reversed * 10 + digit
+Set N = N // 10
+If Original == Reversed:
+Output "Palindrome"
+Else:
+Output "Not Palindrome"
+End
