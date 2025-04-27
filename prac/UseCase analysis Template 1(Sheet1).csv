@@ -1,0 +1,48 @@
+,Input,,,,,,,Output,,Process,Task ( function ),,,
+Use Case,name,Type,Count,Operation Method,Validation,Conversion,Name,Type,Count,Single / multiple tasks,Name,Input,Output Name,Outputtype
+1. checks account balance,Card Number,String,1,single value,"16 char, not  null, numbers only",No,amount,double ,1,multiple,checkCardValidity,Card Number and password,ValidFlag,bool
+,Password,String,1,single value,4 char ,no ,Acsess ,bool ,1,multiple,CheckBalance,Card Number,amount,double
+,option,char,1,single value,within choices,no,choies ,double ,1,multiple,,,,
+2. User withdraws money from ATM,card Number,String,1,single value,"16 char, not  null, numbers only",no,amount,double ,1,multiple,checkCardValidity,Card Number and password,ValidFlag,bool
+,Password,String,1,single value,4 char ,no ,Acsess ,bool ,1,multiple,CheckBalance,Card Number,amount,double
+,option,char,1,single value,within choices ,no ,choies ,double ,1,multiple,withdraws ,number of withdrows ,amount,double
+3. User logs into email account,email ,String,1,single value,number and char ,no ,Acsess ,bool ,1,multiple,check emailvalidate ,email detailes ,Acsess ,bool
+,Password,String,1,single value, char and number ,no ,,,1,,check password ,"email name ,password ",,
+4. User uploads a photo to a social media profile o System: Social Media,image ,String,(need Array ) ,multple value ,image type check,yes ,image after uploed ,string ,1,multiple,check file type convert image to string (txt),,,
+User plays a music file using a music player,Music,string ,(need Array ) ,multple value ,type check ,yes ,Music after uploed ,string ,1,multiple,Validate music file convert music to txt,,,
+User sets a reminder on a smartphone o System: Mobile App,reminder  massage ,string ,(need List),multple value ,type check ,yes ,alert ,string ,1,multiple,enter reminder massage          select time and date                    wraite details,text massage                                Date and time                                       text details ,massage           Time and Date details Alert,string       Date time          string 
+,Date and Time,Date and Time,,,,,,,,,,,,
+7. User books a movie ticket online,name of movie             Date and time      Number of Tickets              payment way ,String          Date time                  String                               string ,(need List),multple value ,movie if Avalible                                                   Date Time if avalible                                             tickets avalible                                                  CheckCard validate                                                                 ,no                                      no                               no                                      yes ,name of movie Date and time Number of Tickets payment way,String          Date time                  String                               string ,1,multiple,movie Avalible  Select Time    Check card Validate ,"movie Name ,Date and time   within choices                cardName ,Number ",moive details Time Details Payment Massage ,string       bool
+8. User searches for a recipe on a cooking app, recipe food,String,1,single value,0,no                                      , recipe food List ,string ,1,Single ,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+9. User uploads multiple images to generate a slideshow video,images ,String,(need List),multple value ,size of images ,yes ,video ,string ,1,Single ,check image size ,image ,,
+10. User places an online food delivery or order ,restaurant Name ,String,array ,multple value ,within choices,no,show Mune ,String          ,1,multiple,check name of restarunt ,name of Restarunt,restarent Name,string 
+,order details ,String,List ,,choes  food and quantity,yes,bill,string ,1,Single ,check food and Quantity ,food Name                           Quantitty ,order details ,string 
+,delivery details ,String,List ,,choes Location in same Aree ,yes,,,,,check location,location ,Confirm Massage ,string 
+,payment Way ,bool,1,,within choices,no ,,,,,check payment way ,Card Number and password,,bool
+11. User schedules an appointment with a doctor through a health portal, TimeAnd Date ,Date and Time,1,single value,within Time Work ,No,Confirm Massage ,string ,1,Single ,check time ,select time ,time ,date and Time 
+12. User creates an event and invites friends on a calendar app,text ,String,1,single value,,no,Confirm Massage ,string ,1,Single ,write event  ,EventText,Confirm Massage ,string 
+,Date and Time,Date and Time,1,single value,,,,,,,Select Time,Time,,
+,Select Friends ,String,array ,multple value ,,,,,,,Select friend Email,email detailes ,,
+,,,,,,,,,,,Send Email,email name ,,
+13. User applies for a loan via online banking,user Name ,String,1,single value,start with char,No,login,string ,1,Single ,check Acount  ,"userName ,password ",Acsess ,bool
+,Password,string ,1,single value,8 Char ,,,,1,,CheckBalance,"userName ,password ",amount,string 
+,option,char ,1,single value,within choices,,Confirm Massage ,string ,1,,,,,
+14.User registers and enrolls in a university course ,user Name ,String,1,single value,start with char,No,Acsess ,bool ,1,Single , ,,,
+,Password,String,1,single value,8 Char ,No,,,1,Single ,,,,
+,chose course ,char,1,single value,within choices,No,course name ,string ,1,multiple,,,,
+,select Time,Date and Time,1,single value,Date Time if avalible ,No,Confirm Massage ,string ,1,Single ,,,,
+15. User customizes and purchases a T-shirt from an online store ,choies Tshirt ,String,1,single value,within choices,no ,Confirm Massage ,string,1,Single ,,,,
+16. User installs software using a package manager • System: OS/Software Installation,option,String,1,single value,within choices,No,Confirm Massage ,string,1,Single ,,,,
+17. User reports a bug on a project management platform,repoert text ,String,1,single value,,no,Confirm Massage ,string,1,Single ,,,,
+18. User uploads a resume and receives job recommendation,upload resume ,String,1,single value,correct format ,yes , job recommendations,Array ,1,multiple,,,,
+19.User submits tax forms online and gets real-time calculations,,,,,,,,,,,,,,
+20. User uses a smart thermostat to schedule home temperature,temperature ,String,1,single value,from 16 to 20 C,No,notifcation Massage ,string,1,Singles,set temperature ,temperature ,opration ,string 
+,Time ,Date and Time,1,,,No,,,,,,,,
+21. User trains a custom AI model on uploaded data,Data set ,String,array ,multple value ,.....,no ,,data After train  ,1,multiple,,,,
+22. User tracks fitness data and gets personalized workout suggestions,user weghit ,String,1,single value,,No,personalized workout suggestions,string,1,Single ,,,,
+,user Length ,,1,,,,,,,,,,,
+,user Age ,,1,,,,,,,,,,,
+"23. User reserves a hotel room, flights, and car rental in one session ",,,,,,,,,,,,,,
